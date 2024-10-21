@@ -1,0 +1,343 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+.main{
+    height: calc(100vh - 80px);
+    width: calc(100vw - 270px);
+    margin-top: 80px;
+   
+    margin-right: 20px;
+    background-color: rgba(42, 83, 238, 0.05);
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    overflow-y: auto;
+    /* overflow-x: auto; */
+    scrollbar-width: thin; /* Firefox: Set scrollbar width */
+    scrollbar-color: #cdd1d6 #f0f0f0; /* Firefox: Thumb and track colors */
+    
+} 
+.main p{
+    padding-left: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 25px;
+    
+}
+.section{
+    height: 100%;
+    background-color: white;
+    margin-left: 12px;
+    margin-right: 12px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+.section p{
+    font-size: 20px;
+}
+.checkpoints{
+    display: flex;
+    gap: 20px;
+    font-size: 16px;
+    color: #424242;
+}
+.radio-label input[type="radio" i] {
+    margin-right: 10px; /* Gap between radio button and text */
+    cursor: pointer;
+    accent-color: blue;
+    
+}
+
+.checkpoints-filter{
+    display: flex;
+    gap: 80px;
+    height: 70px;
+}
+
+.from-dateCheckpoint{
+    width: 368px;
+    height: 70px;
+}
+.from-dateCheckpoint input{
+    width: 368px;
+    height: 36px;
+    border-radius: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border: 1px solid#228BE6;
+    color: gray;
+
+}
+.from-dateCheckpoint input:focus {
+    border: 2px solid #74d1ff; /* Change border color when selected (focused) */
+    outline: none; /* Remove the default outline */
+    box-shadow: 0 0 5px rgba(71, 166, 255, 0.5); /* Optional: add a glow or shadow effect */
+  }
+
+  .to-dateCheckpoint input:focus {
+    border: 2px solid #74d1ff; /* Change border color when selected (focused) */
+    outline: none; /* Remove the default outline */
+    box-shadow: 0 0 5px rgba(71, 166, 255, 0.5); /* Optional: add a glow or shadow effect */
+  }
+
+  .from-dateCheckpoint input:hover,.to-dateCheckpoint input:hover{
+    border: 2px solid #74d1ff;
+  }
+  
+
+.to-dateCheckpoint{
+    width: 368px;
+    height: 70px;
+}
+.to-dateCheckpoint input{
+    width: 368px;
+    height: 36px;
+    border-radius: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border: 1px solid#228BE6;
+    color: gray;
+}
+.from-dateCheckpoint input[type="date" ]{
+    accent-color: blue;
+}
+.horizontal-line{
+    height: 1.5px;
+    background-color: rgba(0, 108, 235, 0.14);
+    width:100%;
+}
+.search-bar{
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    padding: 5px;
+    width: 359px;
+    height: 35px;
+}
+.search-input{
+    border: none;
+    outline: none;
+    flex: 1;
+    padding: 5px;
+}
+.search-button{
+    background-color: #fff;
+    border: none;
+    padding: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.search-icon{
+    height: 16px;
+    width: 16px;
+}
+.search-button img{
+    vertical-align: middle;
+}
+.serachSave-container{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 20px;
+}
+.saveicon{
+    vertical-align: middle;
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+}
+.saveicon img{
+    height: 35px;
+    vertical-align: middle;
+}
+
+
+/* Custom DatePicker Input */
+.custom-datepicker {
+    width: 100%;
+    border: 1px solid #E0EEFF;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+    color:#A9AEB8;
+    font-size: 14px;
+  }
+  
+  /* Calendar pop-up customization */
+  .react-datepicker {
+    /* box-shadow: 0px 4px 8px #ea2c011d; */
+    border: 1px solid #E0EEFF;
+    border-radius: 12px;
+    width: 350px;
+  }
+  
+  .react-datepicker__header {
+    background-color:#fff;
+    border-bottom: none;
+    padding: 0px !important;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+    margin-top: 13px;
+    display: flex;
+    flex-direction: column;
+    
+  }
+  .react-datepicker__header h2{
+    font-size: 14px;
+  }
+  /* .react-datepicker__header {
+    text-align: center;
+    border-top-left-radius: 0.3rem;
+    position: relative;
+}
+   */
+   /* .react-datepicker__header:not(.react-datepicker__header--has-time-select) {
+   
+} */
+  .react-datepicker__day--selected {
+    background-color: #3498db;
+    color: white;
+  }
+  
+  .react-datepicker__day--keyboard-selected {
+    background: #228BE6 0% 0% no-repeat padding-box;
+    
+    border-radius: 4px 4px 4px 4px;
+    opacity: 1;
+    color: white !important;
+  }
+  
+  
+  .react-datepicker__day:hover {
+    background-color: #f0f0f0;
+  }
+  
+  /* Change the color of the date header */
+  /* .react-datepicker__current-month {
+    color: #4E5969;
+    font-family: "Poppins", sans-serif !important;
+    margin: 11px;
+    font-size: 14px;
+    padding: 0px;
+    
+  } */
+  
+  /* .react-datepicker__current-month  {
+    padding: 0;
+    margin: 13px;
+    /* width: 237px; */
+
+  /* Change the look of the year dropdown */
+  .react-datepicker__year-dropdown, .react-datepicker__month-dropdown {
+    background-color: #f1f8ff;
+    color: #3498db;
+  }
+  
+  /* Calendar input icon */
+  .react-datepicker__input-container {
+    display: flex;
+    align-items: center;
+  }
+  .datepicker-icon-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .custom-datepicker {
+    padding-right: 40px; /* Space for the calendar icon */
+  }
+  
+  .calendar-icon {
+    position: relative;
+    left: 338px;
+    top: -28px;
+    cursor: pointer;
+  }
+ 
+  .react-datepicker-popper{
+    border-top-right-radius: 10px;
+  }
+
+  .react-datepicker__current-month {
+    padding: 0;
+    margin-top: 5px;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: normal;
+}
+.react-datepicker__navigation {
+    align-items: center;
+    background: none;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    padding: 0;
+    border: none;
+    z-index: 1;
+    height: 26px;
+    width: 26px;
+    text-indent: -999em;
+    overflow: hidden;
+    
+}
+.react-datepicker__navigation span{
+
+}
+.react-datepicker-popper[data-placement^=bottom] .react-datepicker__triangle {
+    fill: #f0f0f0;
+    color: #f0f0f0;
+    display: none;
+}
+.react-datepicker__year-read-view--down-arrow, .react-datepicker__month-read-view--down-arrow, .react-datepicker__month-year-read-view--down-arrow, .react-datepicker__navigation-icon::before {
+    border-color: #65A6F2;
+    border: style 1px;;
+    border-width: 2px 2px 0 0;
+    content: "";
+    display: block;
+    height: 5px;
+    position: absolute;
+    top: 12px;
+    width: 5px;
+}
+.react-datepicker__day-names {
+    white-space: nowrap;
+    margin-bottom: -8px;
+    margin-top: 10px;
+}
+.react-datepicker__day-name, .react-datepicker__day, .react-datepicker__time-name {
+    color: #040c17;
+    display: inline-block;
+    width: 1.7rem;
+    line-height: 1.7rem;
+    text-align: center;
+    margin: 0.166rem;
+    font-size: 12px;
+}
+.react-datepicker-popper[data-placement^=top] .react-datepicker__triangle {
+    fill: #fff;
+    color: #fff;
+    display: none;
+}
+.react-datepicker__month-container {
+    width: 100%; /* Ensures the month container takes up the full width of the calendar */
+}
+
+/* Optional: Center the calendar content if necessary */
+.react-datepicker__header,
+.react-datepicker__day-names,
+.react-datepicker__week {
+    display: flex;
+    justify-content: space-around; /* Adjusts spacing between days */
+}
+.react-datepicker__month {
+    margin-top: 10px;
+    text-align: center;
+}

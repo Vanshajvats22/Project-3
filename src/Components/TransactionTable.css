@@ -1,0 +1,112 @@
+.transaction-table-container {
+    /* padding: 20px; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .transaction-table-container p{
+    font-size: 20px;
+    color: #101214;
+  }
+  .transaction-table {
+    width: 100%;
+    /* border-collapse: collapse; */
+    border-collapse: separate;
+    /* border-spacing: 0; */
+    border-spacing: 0 10px;
+    height: 400px; /* Adjust this height as per your layout */
+    overflow-y: auto;
+  }
+  
+  .transaction-table th, 
+  .transaction-table td {
+    /* border: 1px solid #ddd; */
+    padding: 8px;
+    text-align: left;
+    font-weight: normal;
+  }
+  
+ 
+  
+  /* .transaction-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+   */
+   .transaction-table tbody tr{
+    color: #101214;
+    font-size: 16px;
+   
+    
+   }
+  /* .transaction-table tr:hover {
+    background-color: #e2e2e2;
+  } */
+  
+  
+  .transaction-table td {
+    border-bottom: 1px solid#DBE6FD;
+    
+  }
+  
+  .transaction-table td {
+    border-top: 1px solid #DBE6FD;
+  }
+  
+  /* .transaction-table tr:last-child td {
+    border-bottom: none;
+  } */
+  
+  /* .transaction-table th:first-child, 
+  .transaction-table td:first-child {
+    border-left: none;
+  } */
+  
+  /* .transaction-table th:last-child, 
+  .transaction-table td:last-child {
+    border-right: none;
+  } */
+  .transaction-table td:first-child{
+    border-left: 1px solid #ddd;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-color: #DBE6FD;
+  }
+  .transaction-table td:last-child{
+    border-right: 1px solid #ddd;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-color:#DBE6FD;
+  }
+  
+ .transaction-table tbody tr input[type="checkbox" i]{
+
+cursor: pointer;
+accent-color: blue;
+ }
+  .selectDeselect{
+    color: #006CEB;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  /* Chrome, Edge, and Safari */
+.transaction-table::-webkit-scrollbar {
+  width: 8px; /* Width of the scrollbar */
+}
+
+.transaction-table::-webkit-scrollbar-thumb {
+  background-color: #007bff; /* Scrollbar thumb color */
+  border-radius: 10px; /* Rounded corners for the thumb */
+  border: 2px solid #f0f0f0; /* Border around the thumb */
+}
+
+.transaction-table::-webkit-scrollbar-track {
+  background: #f0f0f0; /* Background of the scrollbar track */
+  border-radius: 10px; /* Rounded corners for the track */
+}
+
+/* Firefox */
+.transaction-table {
+  scrollbar-width: thin; /* Width of the scrollbar */
+  scrollbar-color: #cdd1d6 #f0f0f0; /* Thumb color and track color */
+}
